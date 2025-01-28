@@ -1,12 +1,12 @@
 // Initialize Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyB0QncHtjxIR5Jwaa0aqkSWT9RFdaVvTng",
-  authDomain: "arabfamevoteplus.firebaseapp.com",
-  databaseURL: "https://arabfamevoteplus-default-rtdb.firebaseio.com",
-  projectId: "arabfamevoteplus",
-  storageBucket: "arabfamevoteplus.firebasestorage.app",
-  messagingSenderId: "554479039127",
-  appId: "1:554479039127:web:0e9ce56cc3b68c041cafd2",
+  apiKey: "AIzaSyDQPvxVawcTkc8Wdm89HGx6ONVpkSQ2ju4",
+  authDomain: "asianclas.firebaseapp.com",
+  databaseURL: "https://asianclas-default-rtdb.firebaseio.com",
+  projectId: "asianclas",
+  storageBucket: "asianclas.appspot.com",
+  messagingSenderId: "90933232698",
+  appId: "1:90933232698:web:c3ee304c55f3e79c66a103"
 };
 firebase.initializeApp(firebaseConfig);
 const appCheck = firebase.appCheck();
