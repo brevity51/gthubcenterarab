@@ -48,8 +48,6 @@
       }
     }
 
-    let pollOptionColors = ['#3EB991', '#FF7563', '#AA66CC', '#FFBB33', '#FF8800', '#33B5E5', '#AA66CC']
-
     setCustomTheme(currentTheme)
 
     function setCustomTheme(theme) {
@@ -66,25 +64,7 @@
       document.documentElement.style.setProperty('--highlightShadow', hexToRGBA(theme.colors['highlight'], 1, 58, 0.772))
     }
 
-    function setCustomFormDesign(design) {
-      for (const [key, value] of Object.entries(design.colors)) {
-        document.documentElement.style.setProperty('--' + key, hexToRGBA(value, 1, 0, 1))
-      }
 
-      if (isDarkBg(hexToRGBA(design.colors['formBackgroundColor'], 1, 0, 1))) {
-        document.documentElement.style.setProperty('--textColorLight', hexToRGBA(design.colors['textColor'], 1, 1, 0.5))
-        document.documentElement.style.setProperty('--titleColorLight', hexToRGBA(design.colors['titleColor'], 1, 1, 0.5))
-      } else {
-        document.documentElement.style.setProperty('--titleColorLight', hexToRGBA(design.colors['titleColor'], 0.2, 0, 1))
-        document.documentElement.style.setProperty('--textColorLight', hexToRGBA(design.colors['textColor'], 0.2, 0, 1))
-      }
-
-      if (isDarkBg(hexToRGBA(design.colors['choiceColor'], 1, 0, 1))) {
-        document.documentElement.style.setProperty('--choiceBackgroundTextColor', 'rgba(255,255,255,1)')
-      } else {
-        document.documentElement.style.setProperty('--choiceBackgroundTextColor', 'rgba(0,0,0,1)')
-      }
-    }
 
     function hexToRGBA(hex, opacity, modifierAdd, modifierMulti) {
       if (!hex) {
@@ -101,22 +81,6 @@
       }
     }
 
-    function isDarkBg(color) {
-      let colors = color.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)$/)
-
-      let r = colors[1]
-      let g = colors[2]
-      let b = colors[3]
-      let a = parseInt(colors[4])
-
-      if (a === 0) return 0
-
-      let hsp = Math.sqrt(0.299 * (r * r) + 0.587 * (g * g) + 0.114 * (b * b))
-
-      if (hsp <= 127.5) {
-        return 1
-      }
-    }
   </script>
   <!-- Add this line in the <head> section of your HTML -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
